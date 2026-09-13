@@ -10,10 +10,6 @@ export const RotatingWords = () => {
   const indexRef = useRef(0);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      return;
-    }
-
     const doRoll = () => {
       setPrev(indexRef.current);
       window.setTimeout(() => {

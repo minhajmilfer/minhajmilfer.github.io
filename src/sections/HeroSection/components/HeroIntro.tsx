@@ -8,16 +8,6 @@ export const HeroIntro = () => {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (reduceMotion) {
-      setTyped(TEXT.length);
-      setDone(true);
-      return;
-    }
-
     let cancelled = false;
     let i = 0;
     const step = () => {

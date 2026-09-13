@@ -14,11 +14,6 @@ function useScrollProgress() {
   const ref = useRef<HTMLDivElement | null>(null);
   const [progress, setProgress] = useState(0);
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) {
-      setProgress(1);
-      return;
-    }
     let raf = 0;
     const update = () => {
       const el = ref.current;
