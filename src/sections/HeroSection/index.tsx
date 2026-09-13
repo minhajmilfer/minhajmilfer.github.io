@@ -1,4 +1,4 @@
-import heroPortrait from "@/assets/_nobg.png";
+import heroPortrait from "@/assets/_nobg.webp";
 import { HeroIntro } from "./components/HeroIntro";
 import { HeroBrands } from "./components/HeroBrands";
 import { RotatingWords } from "./components/RotatingWords";
@@ -24,6 +24,8 @@ export const HeroSection = () => {
               <img
                 src={heroPortrait}
                 alt="Minhaj Milfer"
+                width={900}
+                height={924}
                 className="relative z-[1] block w-full select-none"
                 draggable={false}
               />

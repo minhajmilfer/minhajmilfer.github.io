@@ -2,12 +2,10 @@
   font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 }
 .font-body {
-  font-family: "wf_2e9eb9e087dc46f5af6389e9d", ui-sans-serif, system-ui,
-    sans-serif;
+  font-family: "Body", ui-sans-serif, system-ui, sans-serif;
 }
 .font-script {
-  font-family: "wf_112edd56b1874b92895b605c1", ui-sans-serif, system-ui,
-    sans-serif;
+  font-family: "Script", ui-sans-serif, system-ui, sans-serif;
 }
 
 @keyframes shineSweep {
