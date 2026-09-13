@@ -9,7 +9,7 @@ const links = [
 export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full">
-      <div className="mx-auto mt-6 flex w-max max-w-[92vw] items-center gap-3 overflow-x-auto rounded-full border border-white/10 bg-white/5 px-5 py-2.5 backdrop-blur-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="relative mx-auto mt-6 flex w-max max-w-[92vw] items-center gap-3 overflow-x-auto rounded-full border border-white/10 bg-white/5 px-5 py-2.5 backdrop-blur-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <a
           href="#"
           aria-label="Home"
@@ -29,6 +29,7 @@ export const Header = () => {
             </a>
           ))}
         </nav>
+        <span aria-hidden className="header-shine" />
       </div>
     </header>
   );

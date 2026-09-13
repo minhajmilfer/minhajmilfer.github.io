@@ -232,6 +232,30 @@
   }
 }
 
+.header-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.header-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60%;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-18deg);
+  animation: ctaShineSweep 3.5s ease-in-out infinite;
+}
+
 #contact:target .contact-blink {
   animation: contactBlink 0.9s ease-in-out 3;
 }
@@ -277,7 +301,8 @@
   .journey-badge-now {
     animation: none;
   }
-  .cta-shine::after {
+  .cta-shine::after,
+  .header-shine::after {
     animation: none;
   }
   .contact-blink {
